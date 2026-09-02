@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class CopyString {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String input = sc.nextLine();
+
+        char[] copy = new char[input.length()];
+        for (int i = 0; i < input.length(); i++) {
+            copy[i] = input.charAt(i);
+        }
+        String copiedString = new String(copy);
+
+        System.out.println("Copied String: " + copiedString);
+        sc.close();
+    }
+}
