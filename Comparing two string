@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class StringProgramming {
+
+    // 1. Compare Two Strings
+    public static void compareStrings(String s1, String s2) {
+        int result = s1.compareTo(s2);
+        if (result == 0)
+            System.out.println("Equal");
+        else if (result < 0)
+            System.out.println("String 1 is smaller");
+        else
+            System.out.println("String 1 is greater");
+    }
